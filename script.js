@@ -36,9 +36,13 @@ function updateDateTime() {
         timestring = `${hours} : ${min} : ${sec} <br> <span style="color: blue;">Good Night</span> `;
 
     }
-    document.getElementById('time').innerHTML = timestring
+    document.getElementById('time').innerHTML = timestring 
 }
+
+setInterval(updateDateTime, 1000);
+
 updateDateTime();
+
 
 
 function calculateAge() {
