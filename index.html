@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Utilities App</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="div1">
+        <h1>Date Utilities App</h1>
+        <h3 id="date"></h3>
+        <h3 id="time"></h3>
+    </div>
+
+    <section>
+        <h1>🎂 Enter Your Date of Birth</h1>
+        <input type="date" id="dob">
+        <button onclick="calculateAge()">calculated</button>
+        <p id="ageResult"></p>
+    </section>
+
+    <section>
+        <h1>🎯 Choose a future date to see time remaining.</h1>
+        <input type="date" id="dates">
+        <button onclick="countdown()">Check</button>
+        <p id="come"></p>
+    </section>
+
+    <section>
+        <h1>Select a date to verify whether it is a weekend or not.</h1>
+        <input type="date" id="weekends">
+        <button onclick="weekend()">Check</button>
+        <p id="weekendResult"></p>
+    </section>
+
+    <section>
+        <h1>📅 Fridays in a Month</h1>
+        <select id="month">
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+        </select>
+        <input type="number" id="year" placeholder="e.g. 2025">
+        <button onclick="countFriday()">count</button>
+        <p id="fridays"></p>
+    </section>
+
+
+    <section>
+        <h1>BirthDay Remainder</h1>
+        <div id="birthdayInput">
+            <h3>Enter your birthday:</h3>
+            <input type="date" id="birthdayDate">
+            <button onclick="saveBirthday()">Save Birthday</button>
+        </div>
+
+        <h2 id="message"></h2>
+        <p id="countdown"></p>
+        <button onclick="changeBirthday()">Change Birthday</button>
+    </section>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
