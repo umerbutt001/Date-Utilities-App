@@ -204,7 +204,7 @@ function startCountdown(birthday) {
     var nextBirthday = getNextBirthdayDate(birthday);
     var diffMs = nextBirthday - now;
 
-    if (diffMs <= 0) {
+    if (diffMs <= 1000) {
 
       countdownDiv.textContent = '';
       messageDiv.innerHTML = ` <b> 🎂 Happy Birthday! 🎉 <b>`;
